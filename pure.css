@@ -1,0 +1,75 @@
+html, body{
+    background-color: #26131b;
+}
+
+img{
+    width: 10%;
+    left: 45%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    background-color: #25131a;
+    margin-top: 100px;
+    margin-bottom: 130px;
+    border-radius: 20px;
+    box-shadow: #00FFD5 0px 0px 20px, #002BFF 0px 0px 40px, #FF00C8 0px 0px 60px;
+    animation: formGlow 20s ease infinite;
+    border-radius: 20px;
+}
+
+@keyframes formGlow {
+    0% {
+        box-shadow: #fa0397 0px 0px 10px, #f45f5f 0px 0px 30px, #FF00C8 0px 0px 60px;
+    }
+    50% {
+        box-shadow: #ff0000 0px 0px 10px, #f80078 0px 0px 30px, #ff9500 0px 0px 60px;
+    }
+    100% {
+        box-shadow: #ff0080 0px 0px 10px, #e900fe 0px 0px 30px, #FF00C8 0px 0px 60px;
+    }
+
+}
+.text {
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.topcenter {
+  position: relative;
+  top: 0;
+  top: 30px;
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  font-size: 40px;
+  color: pink;
+  -webkit-text-stroke: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+.bottomcenter {
+  position: relative;
+  top: 90px;
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 15px;
+  color: pink;
+
+}
+.middle {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 15px;
+  font: bold;
+  
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+time{
+    font-size: 20px;
+}
