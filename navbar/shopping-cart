@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pretty Posh</title>
+    <title>CART</title>
     <!-- css external -->
     <link rel="stylesheet" href="/pure.css">
     <!-- cdn external -->
@@ -32,17 +32,12 @@
             <img class="logo" src="/images/Logo Transparent.PNG" alt="logo" a href="/index.html"></a>
         <div>
         <a href="/navbar/wishlist.html" class="material-symbols-outlined">favorite</a></li>
-        <a href="/navbar/shopping-cart" class="material-symbols-outlined">shopping_cart</a></li>
-    </div>
+        <a href="/navbar/shopping-cart" class="material-symbols-outlined">shopping_cart</a></li>    </div>
     </header>
 
-    <section id="banner">
-        <h3 class="bannerh3">New In</h3>
-        <h1 class="bannerh1">Eternity Gemstone Ring</h1>
-        <h2 class="bannerh2">Where timeless elegance meets vibrant sparkle</h2>
-        <p class="bannershop">Shop Now</p>
-
-    </section>
+    <main>
+        <h1>CART</h1>
+    </main>
 
 </body>
 <script src="/script.js"></script>
