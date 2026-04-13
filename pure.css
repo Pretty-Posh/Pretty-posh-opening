@@ -13,10 +13,16 @@ body{
 .section-p1{
   padding: 40px 80px;
 }
-
-p{
-  font-size: 1rem;
+h1{
+  font-size: 35px;
 }
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 17px;
+}
+
 
 /* BANNER IN HOME PAGE */
 .bannerh1{
@@ -25,17 +31,18 @@ p{
   margin-bottom: 3px;
 }
 .bannerh2{
-  font-size: 17px;
-  margin-bottom: 15px;
-  color: #1f201d;
-}
-.bannerh3{
   font-size: 20px;
   color: #fbfafa;
   background-color: #efe702;
   border-radius: 50px;
   padding: 10px;
 }
+.bannerh3{
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #1f201d;
+}
+
 
 /* TOP NAVIGATION */
 header {
@@ -128,7 +135,7 @@ header {
 
 /* BANNER */
 #banner{
-  background-image: url("/images/items/multi-ring-whitebg.svg");
+  background-image: url("/images/items/multi-ring-transparent.png");
   width: 100%;
   height: 80vh;
   background-size: cover;
@@ -137,11 +144,13 @@ header {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  min-width: 250px;
+  max-width: 100%;
 }
 .bannerbutton{
   border: 0;
   color: #fd1388;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px;
   font-size: 20px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -151,18 +160,69 @@ header {
   border-radius: 90px;
   margin-top: 10px;
 }
-
+.bannerbutton:hover{
+  background-color: #f28db6;
+  color: #ffffff;
+  box-shadow: #f9a5c7;
+}
 
 /* Popular Now */
 .popular{
   font-size: x-large;
 }
 
+.pro-container{
+  text-align: center;
+}
+
+#product1 .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 15px;
+  border: 1px solid #fdcde1;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 5px 5px 20px #fcbed6;
+  margin: 15px 0;
+}
+#product1 .pro:hover{
+  background-color: #fcbbd5;
+  padding: 10px 10px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 20px #fbcbde;
+}
+#product1 .pro img{
+  width: 100%;
+  border-radius: 15px;
+}
+#product1 .pro .description{
+  margin-top: 10px;
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .description span{
+  font-size: 15px;
+  color: #fd5799;
+}
+#product1 .pro .description h4{
+  padding: 5px 0;
+  font-size: 17px;
+}
+#product1 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
 
 
 
 
-/* About Page */
+
+
+
+
+/* ABOUT PAGE */
 .about, .about:before, .about:after {
   box-sizing: inherit;
   margin: 40px;
@@ -182,7 +242,7 @@ header {
   padding: 10px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
