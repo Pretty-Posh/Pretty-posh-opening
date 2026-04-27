@@ -19,3 +19,13 @@ if (nav) {
         nav.classList.remove('active');
     })
 }
+
+// SHOP PAGE
+const filter = document.querySelector('button.popular');
+const price = document.querySelectorAll('.price');
+
+if (filter) {
+    filter.addEventListener('click', () => {
+        alert('Filter is not available yet!');
+    });
+}

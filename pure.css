@@ -510,14 +510,18 @@ footer a{
 
 
 /* ABOUT PAGE */
-.about, .about:before, .about:after {
-  box-sizing: inherit;
+  .about, .about:before, .about:after {
   margin: 40px;
   justify-items: center;
 }
 
+.row{
+  box-sizing:inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .column {
-  float: left;
   width: 31%;
   margin-bottom: 16px;
   padding: 0 8px;
@@ -546,6 +550,7 @@ footer a{
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
 }
 
 .container {
@@ -588,4 +593,17 @@ footer a{
   background-size: cover;
   padding: 0 30px;
   background-position: left 50% top 50%;
+}
+.shop-btn{
+  border: none;
+  outline: 0;
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(253, 76, 129);
+  text-align: right;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 1px;
 }
