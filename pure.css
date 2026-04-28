@@ -33,6 +33,11 @@ h4{
 p{
   font-size: 15px;
   margin: 2px 2px;
+  text-align: justify;
+}
+span{
+  font-size: 15px;
+  text-align: justify;
 }
 
 
@@ -208,6 +213,7 @@ header {
   #product1 .pro{
     margin: 15px;
   }
+  
 }
 /* IPHONE */
 @media (max-width: 420px) {
@@ -242,6 +248,20 @@ header {
   }
   .bannerh3{
   font-size: 13px;
+  }
+
+  /* Product Page */
+  #pro-detail{
+    display: flex;
+    flex-direction: column;
+  }
+  #pro-detail .single-pro-img{
+    width: 100%;
+    margin-right: 0;
+  }
+  #pro-detail .single-pro-desc{
+    width: 100%;
+    padding-top: 20px;
   }
 }
 
@@ -280,7 +300,6 @@ header {
 }
 
 .bannerh1{
-  color: #220913;
   font-size: 35px;
   margin-bottom: 3px;
 }
@@ -301,6 +320,8 @@ header {
 /* Popular Now */
 .popular{
   font-size: x-large;
+  font-weight: 600;
+  margin: 0 40px;
 }
 .shop-title{
   display: flex;
@@ -365,6 +386,7 @@ button.popular:hover{
 #product1 .pro .description h4{
   padding: 5px 0;
   font-size: 17px;
+  margin-bottom: 15px;
 }
 .price{
   font-size: 15px;
@@ -589,7 +611,7 @@ footer a{
 #bannershop{
   background-image: url("/images/Pretty\ Posh\ -\ Banner1.png");
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   background-size: cover;
   padding: 0 30px;
   background-position: left 50% top 50%;
@@ -606,4 +628,78 @@ footer a{
   position: absolute;
   right: 10px;
   bottom: 1px;
+}
+
+/* SINGLE PRODUCT */
+#pro-detail{
+  display: flex;
+  margin-top: 20px;
+}
+
+#pro-detail .single-pro-img{
+  width: 40%;
+  margin-right: 50px;
+}
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+#pro-detail .single-pro-desc{
+  width: 50%;
+  padding-top: 30px;
+}
+#pro-detail .single-pro-desc h2{
+  font-size: 25px;
+  font-weight: 600;
+  color: #e2035c;
+}
+#pro-detail .single-pro-desc h3{
+  padding: 40px 0 20px 0;
+  font-weight: 600;
+}
+#pro-detail .single-pro-desc h4{
+  padding: 40px 0 20px 0;
+}
+#pro-detail .single-pro-desc .pro-desc{
+  text-align: justify;
+  font-size: 16px;
+}
+#specification{
+  font-weight: 600;
+}
+#pro-detail .single-pro-desc select{
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #fcdeea;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #ff277d;
+}
+#pro-detail .single-pro-desc select option{
+  color: #ff277d;
+  background-color: #faedf2;
+}
+#pro-detail .single-pro-desc input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+  border: 1px solid #fdcde1;
+  border-radius: 5px;
+    color: #ff277d;
+}
+#pro-detail .single-pro-desc button{
+  padding: 10px 20px;
+  color: white;
+  background-color: #ff3b89;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
 }
