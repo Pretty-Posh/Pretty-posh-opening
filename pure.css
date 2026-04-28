@@ -694,6 +694,9 @@ footer a{
   border-radius: 5px;
     color: #ff277d;
 }
+#pro-detail .single-pro-desc input:focus{
+  outline: none;
+}
 #pro-detail .single-pro-desc button{
   padding: 10px 20px;
   color: white;
